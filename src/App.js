@@ -10,12 +10,16 @@ function App() {
   useEffect (() => {
     axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY") 
     .then(response => {
+      console.log(response.data,"data")
       setData(response.data);
     });
     }, []);
   return (
     <div className="App">
-      <SpaceCard title={data.title}
+      <SpaceCard 
+      
+      title={data.title}
+      // date={data.date}
       url={data.url}
       explanation={data.explanation} />
     </div>
