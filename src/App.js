@@ -19,7 +19,7 @@ function App() {
       <SpaceCard 
       
       title={data.title}
-      // date={data.date}
+      date={data.date}
       url={data.url}
       explanation={data.explanation} />
     </div>
