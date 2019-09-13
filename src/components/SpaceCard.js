@@ -14,8 +14,8 @@ function SpaceCard() {
     });
     }, []);
   return (
-    <div className="App">
-        <Space
+    <div>
+    <Space
       title={data.title}
       date={data.date}
       url={data.url}
